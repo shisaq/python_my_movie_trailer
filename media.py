@@ -1,4 +1,6 @@
 import webbrowser
+
+# create Movie class to build all instances of videos
 class Movie():
     """This provides the available movie variables"""
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]

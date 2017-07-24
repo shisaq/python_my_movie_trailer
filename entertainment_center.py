@@ -1,6 +1,7 @@
 import fresh_tomatoes
 import media
 
+# store 6 movies with info included
 gentle = media.Movie("Gentle",
                      "This is the first song I played and uploaded to YouTube.",
                      "https://i.loli.net/2017/07/25/59764863960f6.png",
@@ -26,5 +27,6 @@ cant_help = media.Movie("Can't Help",
                "https://i.loli.net/2017/07/25/59764b2552215.png",
                "https://www.youtube.com/watch?v=UWJXmFdRLtE")
 
+# pass `movies` array to fresh_tomatoes to render the html
 movies = [gentle, the_heart_never_lies, imagine, alive, young_for_you, cant_help]
 fresh_tomatoes.open_movies_page(movies)
