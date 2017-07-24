@@ -9,7 +9,14 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Haiquan's Portfolios!</title>
+
+    <!-- Google Roboto Slab Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -19,6 +26,12 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            font-family: 'Roboto Slab', serif;
+            background-color: #fff;
+            background-image:
+            linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+            linear-gradient(#eee .1em, transparent .1em);
+            background-size: 100% 1.2em;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -55,6 +68,32 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        /* social icons styles */
+        .fa {
+            box-sizing: content-box;
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -111,6 +150,14 @@ main_page_content = '''
           </div>
         </div>
       </div>
+    </div>
+    <div class="container text-center">
+      <h1>Subscribe me :)</h1>
+    </div>
+    <div class="container text-center">
+      <a href="https://www.facebook.com/haiquanqoo" class="fa fa-facebook" target="_new"></a>
+      <a href="https://twitter.com/shisaq" class="fa fa-twitter" target="_new"></a>
+      <a href="https://www.youtube.com/channel/UCFgCuB3vo8zJrpBQPlXAwJw" class="fa fa-youtube" target="_new"></a>
     </div>
     <div class="container">
       {movie_tiles}
