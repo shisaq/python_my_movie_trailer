@@ -3,15 +3,18 @@ import media
 
 # store 6 movies with info included
 gentle = media.Movie("Gentle",
-                     "This is the first song I played and uploaded to YouTube.",
+                     "This is the first song I played and\
+                      uploaded to YouTube.",
                      "https://i.loli.net/2017/07/25/59764863960f6.png",
                      "https://www.youtube.com/watch?v=lhEMwFGDpok")
 the_heart_never_lies = media.Movie("The Heart Never Lies",
                                    "Singing on The brooklyn bridge!",
                                    "https://i.loli.net/2017/07/25/59764b255e0d7.png",
-                                   "")
+                                   "https://www.youtube.com/watch?\
+                                   v=1a7IXg1rTwM")
 imagine = media.Movie("Imagine",
-               "The world famous song: Imagine - John Lennon, covered by Haiquan.",
+               "The world famous song: Imagine - John Lennon,\
+                covered by Haiquan.",
                "https://i.loli.net/2017/07/25/59764b2622d33.png",
                "https://www.youtube.com/watch?v=Kfl99Sfk-T8")
 alive = media.Movie("Alive",
@@ -28,5 +31,10 @@ cant_help = media.Movie("Can't Help",
                "https://www.youtube.com/watch?v=UWJXmFdRLtE")
 
 # pass `movies` array to fresh_tomatoes to render the html
-movies = [gentle, the_heart_never_lies, imagine, alive, young_for_you, cant_help]
+movies = [gentle,
+          the_heart_never_lies,
+          imagine,
+          alive,
+          young_for_you,
+          cant_help]
 fresh_tomatoes.open_movies_page(movies)
